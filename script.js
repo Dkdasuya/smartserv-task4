@@ -7,7 +7,7 @@ form.addEventListener('submit',function(event){
     const username = form.elements.email.value;
     const password = form.elements.password.value;
     if(password == 'SmartServTest@123'){
-        window.location.href= "/dashboard.html";
+        window.open('./dashboard.html','_self')
     }else{
         validateEmail(username);
         validatePassword(password);
