@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js"></script>
+    
+    <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+
+    <div class="container-top">
+        <h4>Company Metrics</h4> 
+        <div class="container-card">
+            <div class="card">
+                <p class="green">$406,411.29</p>
+                <br>
+                <p>Total Revenue</p>
+            </div>
+            <div class="card">
+                <p>$620</p>
+                <br>
+                <p>Total Jobs Avg</p>
+            </div>
+            <div class="card">
+                <p>655</p>
+                <br>
+                <p>Tickets Created</p>
+            </div>
+            <div class="card">
+                <p>735</p>
+                <br>
+                <p>Tickets Scheduled</p>
+            </div>
+            <div class="card">
+                <p class="red">$110,448.8</p>
+                <br>
+                <p>Outstanding Amount</p>
+            </div>  
+            <div class="card">
+                <p>105</p>
+                <br>
+                <p>Memberships Sold</p>
+            </div>           
+            <div class="card">
+                <p>436</p>
+                <br>
+                <p>Jobs Completed</p>
+            </div>
+            <div class="card">
+                <p>65</p>
+                <br>
+                <p>Total Canceled</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container-chart">
+        <div class="col" >
+            <div class="joblocation">
+                
+            <h4>Revenue by Job Location</h4>
+            </div>
+            <div class="chart-one">
+                <canvas id="chart1"></canvas>
+            </div>
+        </div>
+
+        <div class="col" >
+            <div class="jobtype">
+                <h4>Revenue by Job Type</h4>
+            </div>
+            <div class="chart-two">
+                <canvas id="chart2"></canvas>
+            </div>
+        </div>
+    </div>    
+
+    <script src="dashboard.js" ></script>
+</body>
+</html>
